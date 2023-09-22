@@ -1,0 +1,160 @@
+/* index.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff9c;
+}
+
+header {
+    background-color: #ffffff9c;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff9c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007acc;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Page-specific styles */
+.page {
+    display: none; /* Initially hide all pages */
+}
+
+/* Add animation styles here, e.g., fadeIn and fadeOut */
+.page.active {
+    display: block;
+    animation: fadeIn 1s ease;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.education-entry {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.education-image img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+  
+    margin-right: 30px;
+    
+}
+
+.projects-image img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+   
+    margin-right: 30px;
+    
+}
+
+
+
+/* styles.css */
+
+/* ... (existing styles) */
+
+/* Education entry styles */
+.education-entry {
+    display: flex;
+    margin-bottom: 20px;
+    transform: translateX(-100%); /* Initially off-screen to the left */
+    transition: transform 1s ease; /* Animation duration and easing */
+}
+
+.education-entry.active {
+    transform: translateX(0); /* Move to the center */
+    transition: transform 1s ease; /* Maintain the transition for further interactions */
+}
+
+
+.experience-entry {
+    display: flex;
+    margin-bottom: 20px;
+    transform: translateX(-100%); /* Initially off-screen to the left */
+    transition: transform 1s ease; /* Animation duration and easing */
+}
+
+.experience-entry.active {
+    transform: translateX(0); /* Move to the center */
+    transition: transform 1s ease; /* Maintain the transition for further interactions */
+}
+.projects-entry {
+    display: flex;
+    margin-bottom: 20px;
+    transform: translateY(-100%); /* Initially off-screen to the left */
+    transition: transform 1s ease; /* Animation duration and easing */
+}
+
+.projects-entry.active {
+    transform: translateY(0); /* Move to the center */
+    transition: transform 1s ease; /* Maintain the transition for further interactions */
+}
+
+#circular-image {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 200px; /* Ensure they are the same for a perfect circle */
+    border-radius: 50%;
+    align-items: center;
+    object-fit: cover; /* Optional: Ensures the image covers the entire circle */
+}
+.right-side {
+
+    flex-grow: 8;
+    width: 100px;
+    /* Set the width of the container */
+    height: 250px;
+    /* Set the height of the container */
+    overflow: hidden;
+    /* Hide any overflowing content */
+
+    animation: fadeInRight 3s;
+    /* Add a fade-in animation */
+}
+
+.right-side p {
+    width: 1000px;
+    font-size: 14px;
+}
+
+.right-side h3 {
+    font-size: 24px;
+}
+/* styles.css */
+
+/* ... (existing styles) */
+
