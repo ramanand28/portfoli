@@ -1,0 +1,280 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: rgba(251, 251, 253, .8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #030202;
+}
+
+/* Profile section styles */
+#profile {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    width: 50px;
+}
+
+.profile-header {
+    font-size: 30px;
+}
+
+.profile-header p {
+    font-size: 15px;
+
+    color: #888;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 50px;
+    border-radius: 50%;
+    /* You can add a background image here */
+}
+
+/* Define styles for the image */
+.profile-image img {
+    width: 100%;
+    height: auto;
+    /* Allow the image to maintain its aspect ratio */
+    /* display: block; Remove any extra spacing around the image */
+    border-radius: 50%;
+
+}
+
+/* Define styles for the container */
+.container {
+    font-size: 14px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: center;
+}
+
+/* Define styles for the left side (image) */
+.left-side {
+    height: 35vh;
+    /* Set the container height to fill the viewport */
+    flex: 1;
+    /* Make the left side take up half of the container */
+    text-align: center;
+}
+
+/* Define styles for the image */
+.image {
+    width: 200px;
+    /* Set the image width */
+    height: auto;
+    /* Allow the image to maintain its aspect ratio */
+}
+
+/* Define styles for the right side (text) */
+.right-side {
+
+    flex-grow: 8;
+    width: 100px;
+    /* Set the width of the container */
+    height: 250px;
+    /* Set the height of the container */
+    overflow: hidden;
+    /* Hide any overflowing content */
+
+    animation: fadeInRight 3s;
+    /* Add a fade-in animation */
+}
+
+.right-side p {
+    width: 1000px;
+    font-size: 14px;
+}
+
+.right-side h3 {
+    font-size: 24px;
+}
+
+/* Define the fade-in animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+        /* Start slightly to the right */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Move to the original position */
+    }
+}
+
+
+
+
+
+
+/* Define styles for the card container */
+.card-container {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define styles for the cards */
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    /* Display content and image side by side */
+    align-items: center;
+    /* Center content and image vertically */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards, slideInUp 1s ease-in-out forwards;
+}
+
+/* Define styles for the vertical lines */
+.line {
+    width: 2px;
+    background-color: #ddd;
+    /* Line color */
+    height: 25px;
+    /* Adjust the height as needed */
+    margin: 1px auto;
+    /* Center the line horizontally */
+    opacity: 0;
+    transform: scaleY(0);
+    animation: fadeIn 1s ease-in-out forwards, scaleIn 1s ease-in-out forwards;
+}
+
+/* Style the institute images */
+.institute-img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 20px;
+    /* Add spacing between image and content */
+    border-radius: 50%;
+}
+
+/* Style the card content */
+.card-content {
+    flex: 1;
+    /* Expand content to take available space */
+}
+
+/* Style the card titles */
+.card h4 {
+    margin: 0;
+}
+
+/* Style the date */
+.date {
+    font-style: italic;
+}
+
+/* Keyframes for fade-in and slide-in animations for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade-in and scale-in animations for lines */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
