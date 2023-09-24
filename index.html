@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramanand Chowdary Arigapudi - Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css"> <!-- Add your style.css here -->
+    <style>
+        /* Add your custom CSS for mobile responsiveness here */
+        /* You can use media queries to style elements differently on mobile screens */
+        @media (max-width: 768px) {
+            /* Example: Adjust font size or spacing for smaller screens */
+            body {
+                font-size: 16px;
+            }
+            header {
+                text-align: center;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .profile-image {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
-
-
+<body>
     <header>
         <h1>RAM's PORTFOLIO</h1>
         <p>Software Developer | Machine Learning Enthusiast</p>
@@ -23,14 +43,11 @@
     </header>
 
     <section id="about" class="page active">
-        <link rel="stylesheet" href="style.css">
         <div class="container">
             <div class="left-side">
                 <img src="pc.jpeg" alt="Your Image" class="profile-image">
             </div>
             <div class="right-side">
-                <br>
-                <br>
                 <h3>Ramanand Chowdary Arigapudi</h3>
                 <br>
     
@@ -43,27 +60,21 @@
                     <h3>Those who cannot remember the past are condemned to repeat it.</h3>
                      ~Dynamic Programming.
                 </p>
+            
             </div>
         </div>
-        <br>
         <hr>
-         
     </section>
-
-   
 
     <footer>
         <nav>
-         
             <ul>
-                 <li><a href="index.html">Linkedin</a></li>
-                 <li><a href="education.html">Email</a></li>
-                 
-                 <li><a href="https://www.instagram.com/urstruely_rc">Instagram</a></li>
-                 <li><a href="project.html">Phone</a></li>
-             </ul>
-         </nav>
-        <!-- Contact information or other footer content goes here -->
+                <li><a href="index.html">Linkedin</a></li>
+                <li><a href="education.html">Email</a></li>
+                <li><a href="https://www.instagram.com/urstruely_rc">Instagram</a></li>
+                <li><a href="project.html">Phone</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script src="scripts.js"></script>
